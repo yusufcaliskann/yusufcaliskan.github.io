@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Siteme Hoşgeldiniz</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            background-image: url(cyber.jpg);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+        background-color: #333;
+        color: #ffffff;
+        padding: 20px;
+        text-align: left; /* Yazıyı sola hizala */
+        
+        }
+        header h1 {
+            margin: 0;
+            
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: white; /* Ovalin iç kısmı beyaz olacak */
+            border: 2px solid #fff; /* Beyaz kenarlık */
+            box-shadow: 0 0 15px rgba(255,255,255,0.9); /* Hafif gölge */
+            transition: all 0.5s;
+            
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #ff6e00;
+            border: 2px solid #ff6e00;
+            cursor: pointer;
+            
+        }
+        nav a.active {
+            background:#ff6e00;
+            border-radius: 25px;
+            color: #fff;
+            
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            flex: 1;
+        }
+        article {
+            background-color: rgba(255,255,255,0.9);
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(5, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #070707;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        .article-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: orange;
+        }
+
+        .ozel-resim {
+            width: 100%; /* Görüntü genişliğini yüzde olarak ayarlayabilirsiniz */
+            height: auto; /* Yüksekliği otomatik ayarlar, görüntü oranını bozmadan */
+            border-radius: 15px; /* Köşeleri yuvarlatma */
+            margin: 10px 0; /* Üst ve alt boşluk ekler */
+        }
+    </style>
+</head>
+<link href="@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');" 
+<body>
+    <header>
+        <h1>Web Siteme Hoşgeldiniz</h1>
+    </header>
+
+    <nav>
+        <a href="#home" class="active">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+
+    <div class="container">
+        <article id="home">
+            
+            <img src="black-hat.webp" alt="Açıklama" class="ozel-resim">
+            
+        </article>
+
+        <article id="about">
+            <h2 class="article-title">Hakkımda</h2>
+            <p>Merhaba, ben Yusuf Çalışkan. Adli Bilişim Mühendisliği öğrencisiyim ve siber güvenlik alanında çalışmalar yapıyorum. Özellikle <strong>digital forensic</strong> (dijital adli bilimler), <strong>incident response</strong> (olay müdahalesi) ve <strong>siber güvenlik</strong> konularında meraklıyımdır.</p>
+            
+            <p>Bu alanda edindiğim bilgiler ve deneyimler ile, siber güvenlik tehditlerine karşı etkili çözümler geliştirmeye yönelik çalışmalar yapıyorum. Amacım, sürekli olarak gelişen siber tehditler karşısında güncel bilgi ve stratejilerle savunma yapabilmek ve bilinçli bir toplum oluşturmaktır.</p>
+            
+            <p>Gelişmeleri ve çalışmalarımdan haberdar olmak için <strong>takipte kalmaya devam ediniz</strong>. Size en güncel bilgiler ve siber güvenlik konusundaki yeniliklerle ilgili içerikler sunmayı hedefliyorum.</p>
+        </article>
+        
+
+        <article id="blog">
+            <h2 class="article-title">Köşe Yazılarım</h2>
+        
+            <h3>Incident Response Nedir ve Neden Önemlidir?</h3>
+            <p>Siber güvenlik dünyasında, incident response (olay müdahalesi), bir güvenlik ihlali veya siber saldırı sonrasında bu olayı yönetme sürecidir. Amaç, zararı en aza indirgemek, sistemleri hızlıca geri yüklemek ve gelecekte benzer olayların tekrarını önlemektir. Günümüzde kurumlar, hızla gelişen tehdit ortamına karşı hazırlıklı olmak zorundadır. Bu da güçlü bir incident response stratejisine sahip olmayı zorunlu kılar.</p>
+        
+            <h3>Incident Response Süreci</h3>
+            <p>Incident response genellikle beş ana aşamadan oluşur:</p>
+        
+            <ul>
+                <li><strong>Hazırlık (Preparation):</strong> Güvenlik olaylarına karşı önceden hazırlıklı olmaktır. Bu aşamada, güvenlik politikaları ve prosedürleri oluşturulur, güvenlik araçları devreye alınır ve ekip üyeleri eğitilir. Olaylara hızlı müdahale etmek için gerekli olan araçlar ve kaynaklar belirlenir.</li>
+             
+                <li><strong>Tanımlama (Identification):</strong> Olayın ne zaman ve nasıl gerçekleştiğini belirleme sürecidir. Güvenlik ekipleri olası bir ihlalin tespit edilip edilmediğini anlamak için güvenlik sistemlerini analiz eder. Amaç, saldırının etkisini ve kapsamını anlamaktır.</li>
+        
+                <li><strong>İçerme (Containment):</strong> Olayın kontrol altına alındığı aşamadır. Saldırının yayılmasını önlemek ve zararı sınırlandırmak için hızlı adımlar atılır. Kısa vadeli ve uzun vadeli içerme stratejileri ile saldırının büyümesi engellenir.</li>
+        
+                <li><strong>Giderme (Eradication):</strong> Güvenlik açığının tamamen kapatılması ve saldırganın sistemlerden temizlenmesidir. Bu aşamada, kötü amaçlı yazılımlar, zararlı dosyalar veya diğer tehdit unsurları tespit edilerek sistemden kaldırılır. Ayrıca, saldırıya yol açan güvenlik açıkları giderilir.</li>
+        
+                <li><strong>Geri Yükleme (Recovery):</strong> Sistemlerin normale döndüğü aşamadır. Saldırının etkileri giderildikten sonra, sistemler tekrar güvenli bir şekilde çalışır hale getirilir. Sistemler geri yüklendikten sonra da izleme devam eder, çünkü saldırganların geri dönme olasılığı olabilir.</li>
+        
+                <li><strong>Dersler ve İyileştirme (Lessons Learned):</strong> Her olay, gelecekteki saldırılara daha iyi hazırlık yapmak için bir öğrenme fırsatıdır. Olay sonrasında yapılan bir değerlendirme toplantısı ile ekip, hangi adımların doğru veya yanlış yapıldığını analiz eder ve gelecekteki olaylara daha hızlı ve etkili bir şekilde yanıt verebilmek için süreci iyileştirir.</li>
+            </ul>
+        
+            <h3>Incident Response Ekibi (CSIRT) ve Önemi</h3>
+            <p>Her başarılı incident response süreci, güçlü ve yetenekli bir Siber Güvenlik Olay Müdahale Ekibi (Computer Security Incident Response Team - CSIRT) tarafından yönetilmelidir. CSIRT, olaylara hızlı müdahale edebilmek için farklı uzmanlıklardan oluşur. Bu ekip, olayın tespiti, analizi, giderilmesi ve raporlanması süreçlerinde önemli roller oynar.</p>
+        
+            <h3>Sonuç</h3>
+            <p>Siber güvenlik olayları kaçınılmazdır, ancak etkilerini en aza indirgemek ve iş sürekliliğini sağlamak mümkündür. İyi planlanmış bir incident response stratejisi, saldırılara karşı ilk savunma hattıdır. Bu nedenle, şirketler ve kurumlar bu süreci ciddiye almalı, düzenli eğitimler ve tatbikatlar ile olay müdahale yetkinliklerini geliştirmelidirler.</p>
+        
+            <!-- Yeni blog yazısı burada başlıyor, margin-top ile ek boşluk yaratıldı -->
+            <h3 style="margin-top: 40px;">Dijital Adli Bilimler (Digital Forensic) Nedir?</h3>
+            <p>Dijital adli bilimler, dijital cihazlar üzerindeki veri ve kanıtları inceleyerek adli bir soruşturmaya yardımcı olmayı amaçlayan bir bilim dalıdır. Bilgisayarlar, akıllı telefonlar, tabletler, ağ sistemleri ve bulut depolama gibi çeşitli dijital cihazlardan elde edilen veriler, bu alanda analiz edilir.</p>
+            
+            <p>Bu süreç, özellikle siber suçların artışıyla büyük önem kazanmıştır. Siber saldırılar, veri hırsızlıkları, dolandırıcılıklar veya zararlı yazılım kullanımı gibi olaylar dijital adli incelemeyle çözülmektedir.</p>
+        
+            <h3>Dijital Adli Süreç</h3>
+            <p>Dijital adli bilimlerde süreç, titizlikle yürütülür ve genellikle şu aşamalardan oluşur:</p>
+            <ul>
+                <li><strong>Kanıt Toplama:</strong> Dijital cihazlardan yasal yollarla veri elde edilir. Bu aşamada cihazlar, olay yerinde güvence altına alınarak imaj alınır (disk kopyası).</li>
+                <li><strong>Analiz:</strong> Toplanan dijital veriler detaylı şekilde incelenir. Bu aşamada, silinen dosyaların kurtarılması, dosya zaman damgalarının analizi ve ağ trafiği izleme gibi teknikler kullanılır.</li>
+                <li><strong>Raporlama:</strong> İncelemelerin sonuçları detaylı bir rapor halinde sunulur. Bu rapor, mahkemelerde kanıt olarak kullanılabilir.</li>
+            </ul>
+        
+            <h3>Neden Önemlidir?</h3>
+            <p>Dijital adli bilimler, günümüz dünyasında suçların çözülmesi için vazgeçilmezdir. Özellikle siber suçlarda dijital delillerin toplanması ve doğru şekilde analiz edilmesi, suçluların tespit edilmesi ve yargı sürecinin başarılı bir şekilde ilerlemesi açısından hayati önem taşır.</p>
+        
+            <p>Sonuç olarak, dijital adli bilimler sayesinde, dijital dünyadaki suçlar daha hızlı ve etkili bir şekilde çözülerek, hem bireylerin hem de şirketlerin güvenliği sağlanır.</p>
+        </article>
+        
+        
+        
+
+        <article id="contact">
+            <h2 class="article-title">İletişim</h2>
+            <p>Mail  <a href="mailto:caliskny23@gmail.com">caliskny23@gmail.com</a> üzerinden ulaşabilirsiniz.</p>
+            <p>Linkedln  <a href="https://www.linkedin.com/in/yusuf%C3%A7al%C4%B1%C5%9Fkan/">www.linkedin.com/in/yusufçalışkan</a> üzerinden ulaşabilirsiniz.</p>
+        </article>
+
+        <a href="#blog" class="btn">Daha Fazla Makale</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Siber Güvenlik Blogu | Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>
